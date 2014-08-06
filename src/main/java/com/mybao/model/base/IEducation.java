@@ -8,5 +8,5 @@ import com.mybao.model.IPKItem;
  */
 public interface IEducation extends IPKItem
 {
-	
+	/**/
 }
