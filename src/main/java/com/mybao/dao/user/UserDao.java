@@ -7,5 +7,5 @@ import com.mybao.dao.BaseDao;
 @Repository
 public class UserDao extends BaseDao
 {
-
+	
 }
