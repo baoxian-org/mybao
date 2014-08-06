@@ -7,16 +7,17 @@ import com.mybao.dao.user.UserDao;
 import com.mybao.model.user.User;
 
 @Service
-public class IndexService {
+public class IndexService
+{
 	@Autowired
 	private UserDao userDao;
-	
-	
-	public void addUser(String name,String number){
-		User u=new User();
+
+	public void addUser(String name, String number)
+	{
+		User u = new User();
 		u.setName(name);
 		u.setNumber(number);
-		
+
 		userDao.getSession().saveOrUpdate(u);
 	}
 }

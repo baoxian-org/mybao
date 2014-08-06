@@ -10,22 +10,27 @@ import org.springframework.orm.hibernate4.support.HibernateDaoSupport;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
+
 @Repository
-public abstract class BaseDao {
+public abstract class BaseDao
+{
 
 	@Autowired
 	private SessionFactory sessionFactory;
-	
-	public void setSessionFactory(SessionFactory sessionFactory){
-		this.sessionFactory=sessionFactory;
+
+	public void setSessionFactory(SessionFactory sessionFactory)
+	{
+		this.sessionFactory = sessionFactory;
 	}
-	
-	public SessionFactory getSessionFactory(){
+
+	public SessionFactory getSessionFactory()
+	{
 		return this.sessionFactory;
 	}
-	
-	public Session getSession(){
+
+	public Session getSession()
+	{
 		return this.sessionFactory.openSession();
-	 
+
 	}
 }

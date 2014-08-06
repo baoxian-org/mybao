@@ -1,5 +1,6 @@
 package com.mybao.model.product;
 
-public interface IProduct {
+public interface IProduct
+{
 
 }

@@ -6,31 +6,43 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="t_user")
-public class User {
+@Table(name = "t_user")
+public class User
+{
 	@Id
-    @GeneratedValue
+	@GeneratedValue
 	private int id;
-	
+
 	private String name;
 	private String number;
-	
-	public int getId() {
+
+	public int getId()
+	{
 		return id;
 	}
-	public void setId(int id) {
+
+	public void setId(int id)
+	{
 		this.id = id;
 	}
-	public String getName() {
+
+	public String getName()
+	{
 		return name;
 	}
-	public void setName(String name) {
+
+	public void setName(String name)
+	{
 		this.name = name;
 	}
-	public String getNumber() {
+
+	public String getNumber()
+	{
 		return number;
 	}
-	public void setNumber(String number) {
+
+	public void setNumber(String number)
+	{
 		this.number = number;
 	}
 }
