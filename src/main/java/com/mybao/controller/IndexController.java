@@ -22,14 +22,14 @@ public class IndexController {
 	{
 		try
 		{
-
+			
+			
 			if(indexService != null){
 				indexService.addUser("lrj", "abc");
 			}
 				
 			User u=new User();
 
-		
 			u.setName("招商银行");
 			u.setNumber("001");
 		
