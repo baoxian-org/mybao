@@ -34,6 +34,4 @@ public interface ICustomer extends IPKItem
 	 */
 	void setBirthday(Date birthday);
 	
-	
-	
 }
